@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+   
+</head>
+<body>
+   <div id="output">What is your name?</div>
+    <input type="text" id="inputField" placeholder="Enter new text">
+    <button onclick="updateText()">Update Text</button>
+    <script>
+        function updateText() {
+            const newText = document.getElementById('inputField').value;
+            let result = "<h1>Your name is " + newText + "</h1>";
+            document.getElementById('output').innerHTML = result;
+        }
+    </script>
+
+
+
+
+    <h2 id = "header">Hello Header</h2>
+    <button onclick="changeheader()">Change header</button>
+     <script>
+        function changeheader(){
+            let myheader = document.getElementById("header");
+            myheader.innerHTML = "Hello Students";
+            myheader.style.color = "red"
+            document.getElementById("header").innerHTML = "Hello New Header";
+            document.getElementById("header").style.color = "blue";
+        }
+    </script>
+    <script>
+        
+        
+        
+
+
+
+       // let animal = prompt("Whats your favorite animal?:");
+
+        //console.log("you love dog" + animal);
+
+
+
+        /*
+        today is a great day
+        */
+        let result = 14 % 5; // remainder
+        console.log("Remainder is " + result );
+       
+        let a = 5;
+        //a = a + 20;
+        a += 40;
+       
+        let b = 10;
+        let sum;
+        sum = a + b
+        console.log("Sum = " + sum);
+
+    </script>
+
+    
+    <p id = "hold">Some text</p>
+
+    <script>
+        document.getElementById("hold").innerHTML = "I dont know what to type here";
+        console.log("Hello World!");
+        console.log("Fall is great");
+    </script>
+    
+</body>
+</html>
